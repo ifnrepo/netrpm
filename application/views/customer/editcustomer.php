@@ -1,0 +1,327 @@
+<div class="row font-kecil p-2">
+    <div class="col-6">
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Kode</label>
+            <div class="col">
+                <input type="hidden" name="id" id="id" value="<?= $data['id']; ?>">
+                <input type="text" class="form-control font-kecil" name="kode_customer" id="kode_customer" value="<?= $data['kode_customer']; ?>" placeholder="Kode Customer">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Customer</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="nama_customer" id="nama_customer" value="<?= $data['nama_customer']; ?>" placeholder="Nama Customer">
+                <span class="text-secondary" style="font-size: 10px;">Data ini yang akan muncul di AKB/AMB</span>
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Buyer</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="buyer" id="buyer" value="<?= $data['buyer']; ?>" placeholder="Alias">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Exdo</label>
+            <div class="col">
+                <select class="form-select font-kecil" name="exdo" id="exdo">
+                    <option value="export" <?php if ($data['exdo'] == 'Export') {
+                                                echo "selected";
+                                            }; ?>>Export</option>
+                    <option value="domestic" <?php if ($data['exdo'] == 'Domestic') {
+                                                    echo "selected";
+                                                }; ?>>Domestic</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Port</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="port" id="port" value="<?= $data['port']; ?>" placeholder="Port">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Country</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="country" id="country" value="<?= $data['country']; ?>" placeholder="Country">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Alamat</label>
+            <div class="col">
+                <textarea class="form-control" name="alamat" id="alamat" cols="30" rows="3" placeholder="Alamat"><?= $data['alamat'] ?></textarea>
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Desa</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="desa" id="desa" value="<?= $data['desa']; ?>" placeholder="Desa">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Kecamatan</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="kecamatan" id="kecamatan" value="<?= $data['kecamatan']; ?>" placeholder="Kecamatan">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Kab/Kota</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="kab_kota" id="kab_kota" value="<?= $data['kab_kota']; ?>" placeholder="Kab/Kota">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Provinsi</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="propinsi" id="propinsi" value="<?= $data['propinsi']; ?>" placeholder="propinsi">
+            </div>
+        </div>
+
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Kode Pos</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="kodepos" id="kodepos" value="<?= $data['kodepos']; ?>" placeholder="kodepos">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Npwp</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="npwp" id="npwp" value="<?= $data['npwp']; ?>" placeholder="NPWP">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">NIK</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="nik" id="nik" value="<?= $data['nik']; ?>" placeholder="Nomor KTP">
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Telp</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="telp" id="telp" value="<?= $data['telp']; ?>" placeholder="Telp">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Email</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="email" id="email" value="<?= $data['email']; ?>" placeholder="Email">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Kontak</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="kontak" id="kontak" value="<?= $data['kontak']; ?>" placeholder="Kontak">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Keterangan</label>
+            <div class="col">
+                <textarea class="form-control font-kecil" name="keterangan" id="keterangan" cols="30" rows="3" placeholder="Keterangan" value="<?= $data['keterangan'] ?>"></textarea>
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">BuyCode</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="buycode" id="buycode" placeholder="BuyCode" value="<?= $data['buycode']; ?>">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">InsCode</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="inscode" id="inscode" placeholder="Inscode" value="<?= $data['inscode']; ?>">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">JCode1</label>
+            <div class="col">
+                <select class="form-select font-kecil" name="jcode1" id="jcode1">
+                    <option selected value="1" <?php if ($data['jcode1'] == '1') {
+                                                    echo "selected";
+                                                }; ?>>1</option>
+                    <option value="2" <?php if ($data['jcode1'] == 2) {
+                                            echo "selected";
+                                        }; ?>>2</option>
+                    <option value="3" <?php if ($data['jcode1'] == 3) {
+                                            echo "selected";
+                                        }; ?>>3</option>
+                    <option value="4" <?php if ($data['jcode1'] == 4) {
+                                            echo "selected";
+                                        }; ?>>4</option>
+                    <option value="5" <?php if ($data['jcode1'] == 5) {
+                                            echo "selected";
+                                        }; ?>>5</option>
+                    <option value="6" <?php if ($data['jcode1'] == 6) {
+                                            echo "selected";
+                                        }; ?>>6</option>
+                    <option value="7" <?php if ($data['jcode1'] == 7) {
+                                            echo "selected";
+                                        }; ?>>7</option>
+                    <option value="8" <?php if ($data['jcode1'] == 8) {
+                                            echo "selected";
+                                        }; ?>>8</option>
+                    <option value="9" <?php if ($data['jcode1'] == 9) {
+                                            echo "selected";
+                                        }; ?>>9</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">JCode2</label>
+            <div class="col">
+                <select class="form-select font-kecil" name="jcode2" id="jcode2">
+                    <option selected value="1" <?php if ($data['jcode2'] == 1) {
+                                                    echo "selected";
+                                                }; ?>>1</option>
+                    <option value="2" <?php if ($data['jcode2'] == 2) {
+                                            echo "selected";
+                                        }; ?>>2</option>
+                    <option value="3" <?php if ($data['jcode2'] == 3) {
+                                            echo "selected";
+                                        }; ?>>3</option>
+                    <option value="4" <?php if ($data['jcode2'] == 4) {
+                                            echo "selected";
+                                        }; ?>>4</option>
+                    <option value="5" <?php if ($data['jcode2'] == 5) {
+                                            echo "selected";
+                                        }; ?>>5</option>
+                    <option value="6" <?php if ($data['jcode2'] == 6) {
+                                            echo "selected";
+                                        }; ?>>6</option>
+                    <option value="7" <?php if ($data['jcode2'] == 7) {
+                                            echo "selected";
+                                        }; ?>>7</option>
+                    <option value="8" <?php if ($data['jcode2'] == 8) {
+                                            echo "selected";
+                                        }; ?>>8</option>
+                    <option value="9" <?php if ($data['jcode2'] == 9) {
+                                            echo "selected";
+                                        }; ?>>9</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Benua</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="benua" id="benua" placeholder="Benua" value="<?= $data['benua']; ?>">
+            </div>
+        </div>
+
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Region</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="region" id="region" placeholder="Region" value="<?= $data['region']; ?>">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Kode Negara</label>
+            <div class="col">
+                <select name="kode_negara" id="kode_negara" class="form-select">
+                    <option value=""></option>
+                    <?php foreach ($getnegara->result_array() as $key) : ?>
+                        <?php if ($key['kode_negara'] == $data['kode_negara']) : ?>
+                            <option value="<?= $key['kode_negara']; ?>" selected><?= $key['kode_negara']; ?> (<?= $key['uraian_negara']; ?>)</option>
+                        <?php else : ?>
+                            <option value="<?= $key['kode_negara']; ?>"><?= $key['kode_negara']; ?> (<?= $key['uraian_negara']; ?>)</option>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label pt-0"></label>
+            <div class="col">
+                <label class="form-check">
+                    <input class="form-check-input" id="pembeli" name="pembeli" type="checkbox" <?php if ($data['pembeli'] == 1) {
+                                                                                                    echo 'checked';
+                                                                                                } ?>>
+                    <span class="form-check-label font-bold font-primary">DIRECT SELL</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">CustId</label>
+            <div class="col">
+                <input type="text" class="form-control font-kecil" name="cust_id" id="cust_id" placeholder="CustId" value="<?= $data['cust_id']; ?>">
+            </div>
+        </div>
+        <div class="mb-1 row">
+            <label class="col-3 col-form-label required">Jenis PKP</label>
+            <div class="col">
+                <select class="form-select" name="jns_pkp" id="jns_pkp" aria-label="Default">
+                    <option value="0" selected>-</option>
+                    <option value="1" <?= ($data['jns_pkp'] == 1) ? 'selected' : ''; ?>>PERSEORANGAN</option>
+                    <option value="2" <?= ($data['jns_pkp'] == 2) ? 'selected' : ''; ?>>PKP</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-sm me-auto" data-bs-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-sm btn-primary" id="updatecustomer">Update</button>
+</div>
+<script>
+    $("#updatecustomer").click(function() {
+        var pembeli = $("#pembeli").prop('checked') ? 1 : 0;
+        console.log("exdo:", $("#exdo").val());
+        if ($("#kode_customer").val() == '') {
+            pesan('Kode harus di isi !', 'error');
+            return;
+        }
+        if ($("#nama_customer").val() == '') {
+            pesan('Nama Customer harus di isi !', 'error');
+            return;
+        }
+        $.ajax({
+            dataType: "json",
+            type: "POST",
+            url: base_url + 'customer/updatecustomer',
+            data: {
+                kode_customer: $("#kode_customer").val(),
+                nama_customer: $("#nama_customer").val(),
+                buyer: $("#buyer").val(),
+                exdo: $("#exdo").val(),
+                port: $("#port").val(),
+                country: $("#country").val(),
+                alamat: $("#alamat").val(),
+                desa: $("#desa").val(),
+                kecamatan: $("#kecamatan").val(),
+                kab_kota: $("#kab_kota").val(),
+                propinsi: $("#propinsi").val(),
+                kodepos: $("#kodepos").val(),
+                npwp: $("#npwp").val(),
+                telp: $("#telp").val(),
+                email: $("#email").val(),
+                kontak: $("#kontak").val(),
+                keterangan: $("#keterangan").val(),
+                buycode: $("#buycode").val(),
+                inscode: $("#inscode").val(),
+                jcode1: $("#jcode1").val(),
+                jcode2: $("#jcode2").val(),
+                benua: $("#benua").val(),
+                region: $("#region").val(),
+                kode_negara: $("#kode_negara").val(),
+                pembeli: pembeli,
+                cust_id: $("#cust_id").val(),
+                jns_pkp: $("#jns_pkp").val(),
+                id: $("#id").val(),
+                nik: $("#nik").val()
+            },
+            success: function(data) {
+                window.location.reload();
+
+            },
+            error: function(xhr, ajaxOptions, thrownError) {
+                console.log(xhr.status);
+                console.log(thrownError);
+            }
+        })
+    })
+</script>
